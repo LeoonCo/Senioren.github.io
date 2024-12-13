@@ -270,9 +270,9 @@ document.addEventListener("DOMContentLoaded", function() {
             solution5: "",
         },
         {
-            problem: "",
-            solution: "",
-            solution2: "",
+            problem: "Wie funktioniert Netflix auf dem Handy?",
+            solution: "1. Laden Sie sich die App 'Netflix' im Store herunter.",
+            solution2: "2. Öffnen Sie 'Netflix'.",
             solution3: "",
             solution4: "",
             solution5: ""

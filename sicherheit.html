@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grundlagen - Internet leicht gemacht</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Internet leicht gemacht</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="grundlagen.html">Grundlagen</a></li>
+                <li><a href="sicherheit.html" class="active">Sicherheit</a></li>
+                <li><a href="kommunikation.html">Kommunikation</a></li>
+                <li><a href="services.html">Nützliche Dienste</a></li>
+                <li><a href="glossar.html">Glossar</a></li>
+                <li><a href="suche.html">Suche</a></li>
+                <li><a href="Anmeldung.html">Anmeldung</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Warum Sicherheit wichtig ist -->
+        <section>
+            <h2>Warum ist Sicherheit wichtig?</h2>
+            <p>Das Internet bietet viele Möglichkeiten, birgt aber auch Gefahren. Hacker, Betrüger und schädliche Software können Ihre Daten stehlen oder beschädigen. Sichere Ihre Online-Aktivitäten, um geschützt zu bleiben!</p>
+        </section>
+
+        <!-- Passwörter -->
+        <section>
+            <h2>Sichere Passwörter erstellen</h2>
+            <p>Ein gutes Passwort ist lang, einzigartig und schwer zu erraten. Beispiel: <strong>H@cker!Nein2024!</strong></p>
+            <button id="generatePassword">Sicheres Passwort generieren</button>
+            <p id="passwordDisplay" style="font-weight: bold;"></p>
+            <p>Dies gilt nur als Beispiel, bitte benutzten Sie dieses Passwort nicht für private Zwecke.</p>
+        </section>
+
+        <!-- Phishing -->
+        <section>
+            <h2>Phishing erkennen</h2>
+            <p>Phishing ist eine Betrugsmasche, bei der Hacker versuchen, Sie mit gefälschten E-Mails oder Webseiten zu täuschen. Achten Sie also auf:</p>
+            <ul>
+                <li>Rechtschreibfehler in E-Mails</li>
+                <li>Dringende Forderungen, z. B. "Senden Sie uns sofort Ihr Passwort!"</li>
+                <li>Ungewöhnliche Absenderadressen</li>
+            </ul>
+            <button id="checkPhishing">Simulierte Phishing-E-Mail anzeigen</button>
+            <div id="phishingExample" style="display: none; margin-top: 10px;">
+                <p><strong>Von:</strong> service@bank-konto-sicherung.com</p>
+                <p>Sehr geehrter Kunde,</p>
+                <p>Ihr Konto wurde gesperrt. Bitte klicken Sie auf diesen <button id="LinkBait" style="padding: 10px 0px;margin-top: 10px;background-color: white;color: blue;border: none;border-radius: 0px;cursor: pointer;">Link</button>, um Ihre Identität zu bestätigen.
+                    <div id="BaitExample" style="display: none;">
+                        <p style="font-weight: 100; color: red">ACHTUNG!!! Niemals solche Links anklicken, damit geben Sie Ihre Daten an Dritte frei.</p>
+                    </div>
+                </p>
+            </div>
+        </section>
+
+        <!-- Sichere Websites -->
+        <section>
+            <h2>Sichere Websites erkennen</h2>
+            <p>Stellen Sie sicher, dass die URL der Website mit <strong>https://</strong> beginnt. Ein Schloss-Symbol in der Adressleiste zeigt an, dass die Verbindung sicher ist.</p>
+            <button id="checkWebsiteSecurity">Beispiel einer sicheren Website anzeigen</button>
+            <div id="websiteSecurity" style="display: none; margin-top: 10px;">
+                <p>✅ Sicher: <strong>https://www.meine-sichere-seite.de</strong></p>
+                <p>❌ Unsicher: <strong>http://www.unsichere-seite.com</strong></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Internet leicht gemacht | <a href="mailto:info@internetleichtgemacht.de">Kontakt</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    </body>
+    </html>

@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user && password_verify($currentPassword, $user['password'])) {
         // Neues Passwort speichern
         $newPasswordHash = password_hash($newPassword, PASSWORD_DEFAULT);
-        $stmt = $db->prepare('UPDATE profiles SET password = ? WHERE id = ?');
+        $stmt = $db->prepare('UPDATE users SET password = ? WHERE id = ?');
         $stmt->execute([$newPasswordHash, $_SESSION['user_id']]);
 
         echo "Passwort erfolgreich geändert.";

@@ -1,45 +1,35 @@
 <?php
-session_start();
+// Verbindung zur Datenbank herstellen
+try {
+    $pdo = new PDO('sqlite:C:/Users/pucht/Projects/SeniorenWebsite/frontend/my_website.db'); // Pfad zur SQLite-Datenbank anpassen
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Datenbankverbindung fehlgeschlagen: " . $e->getMessage());
+}
 
-// Verbindung zur SQLite-Datenbank herstellen
-$db = new PDO('sqlite:my_website.db');
-
-// Prüfen, ob das Formular abgeschickt wurde
+// POST-Daten verarbeiten
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = htmlspecialchars($_POST['username']);
-    $email = htmlspecialchars($_POST['email']);
-    $password = $_POST['password'];
-    $confirmPassword = $_POST['confirmPassword'];
+    // Benutzereingaben absichern und validieren
+    $email = isset($_POST['email']) ? trim($_POST['email']) : null;
+    $password = isset($_POST['password']) ? trim($_POST['password']) : null;
 
-    // Überprüfen, ob die Passwörter übereinstimmen
-    if ($password !== $confirmPassword) {
-        echo "Die Passwörter stimmen nicht überein.";
-        exit;
+    // Eingaben sichern
+    $email = htmlspecialchars($email, ENT_QUOTES, 'UTF-8');
+    $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+
+    try {
+        // Benutzer in die Datenbank einfügen
+        $stmt = $pdo->prepare("INSERT INTO users (email, password) VALUES (:email, :password)");
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->bindParam(':password', $hashedPassword, PDO::PARAM_STR);
+        $stmt->execute();
+
+        echo "Registrierung erfolgreich!";
+    } catch (PDOException $e) {
+        // Fehler beim Einfügen behandeln
+        die("Datenbankfehler: " . $e->getMessage());
     }
-
-    // Überprüfen, ob der Benutzer bereits existiert
-    $stmt = $db->prepare('SELECT * FROM users WHERE email = ?');
-    $stmt->execute([$email]);
-    $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    if ($user) {
-        echo "Ein Benutzer mit dieser E-Mail-Adresse existiert bereits.";
-        exit;
-    }
-
-    // Passwort verschlüsseln
-    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
-
-    // Benutzer in die Datenbank einfügen
-    $stmt = $db->prepare('INSERT INTO users (username, email, password) VALUES (?, ?, ?)');
-    $stmt->execute([$username, $email, $passwordHash]);
-
-    // Benutzer in die Sitzung setzen (damit er sofort eingeloggt ist)
-    $_SESSION['user_id'] = $db->lastInsertId();
-    $_SESSION['username'] = $username;
-
-    // Weiterleitung zur Profilseite
-    header('Location: profile.php');
-    exit;
 }
 ?>
+
+ 

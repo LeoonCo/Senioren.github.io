@@ -179,7 +179,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Klicke auf 'Konto erstellen'.",
             solution3: "3. Fülle deine persönlichen Daten aus.",
             solution4: "4. Wähle einen Benutzernamen und ein Passwort.",
-            solution5: "5. Folge den weiteren Anweisungen auf dem Bildschirm."
+            solution5: "5. Folge den weiteren Anweisungen auf dem Bildschirm.",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie installiere ich eine App?",
@@ -187,7 +188,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Suche nach der gewünschten App.",
             solution3: "3. Klicke auf 'Installieren'.",
             solution4: "4. Warte, bis die App heruntergeladen ist.",
-            solution5: "5. Öffne die App, nachdem die Installation abgeschlossen ist."
+            solution5: "5. Öffne die App, nachdem die Installation abgeschlossen ist.",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie kann ich sicher im Internet surfen?",
@@ -195,7 +197,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Besuche nur sichere Websites (erkennbar an 'https').",
             solution3: "3. Verwende starke Passwörter und ändere sie regelmäßig.",
             solution4: "4. Öffne keine unbekannten E-Mails oder Anhänge.",
-            solution5: "5. Installiere ein Antivirusprogramm."
+            solution5: "5. Installiere ein Antivirusprogramm.",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie richte ich mein WLAN ein?",
@@ -203,7 +206,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Verbinde dein Gerät mit dem WLAN (siehe Rückseite des Routers für den Standardnamen und das Passwort).",
             solution3: "3. Öffne den Browser und gehe zu '192.168.0.1' oder '192.168.1.1'.",
             solution4: "4. Melde dich mit den Router-Zugangsdaten an.", 
-            solution5: "5. Folge den Anweisungen, um dein WLAN einzurichten."
+            solution5: "5. Folge den Anweisungen, um dein WLAN einzurichten.",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie mache ich ein Videoanruf?",
@@ -211,7 +215,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Melde dich an oder erstelle ein Konto.",
             solution3: "3. Wähle einen Kontakt aus der Liste.",
             solution4: "4. Klicke auf das Kamera-Symbol, um einen Videoanruf zu starten.",
-            solution5: "5. Stelle sicher, dass Kamera und Mikrofon eingeschaltet sind."
+            solution5: "5. Stelle sicher, dass Kamera und Mikrofon eingeschaltet sind.",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie verschicke ich Nachrichten auf Whatsapp?",
@@ -219,7 +224,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Geben Sie Ihre Nachricht unten im Eingabefeld ein.",
             solution3: "3. Tippen Sie auf das Papierflieger-Symbol, um die Nachricht zu senden.",
             solution4: "",
-            solution5: ""
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie kann ich eine Gruppe auf Whatsapp aufmachen?",
@@ -227,7 +233,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Wählen Sie 'Neue Gruppe' und fügen Sie Kontakte hinzu.",
             solution3: "3. Geben Sie einen Namen für die Gruppe ein und bestätigen Sie.",
             solution4: "",
-            solution5: ""
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie kann ich Nachrichten auf Facebook verschicken?",
@@ -235,7 +242,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Geben Sie Ihre Nachricht in das Textfeld unten ein.",
             solution3: "3. Tippen Sie auf das Papierflieger-Symbol, um die Nachricht zu senden.",
             solution4: "",
-            solution5: ""
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie kann ich eine Sprachnachricht auf Facebook aufnehmen?",
@@ -243,7 +251,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Sprechen Sie Ihre Nachricht ein.",
             solution3: "3. Heben Sie Ihren Finger, um die Nachricht zu senden.",
             solution4: "",
-            solution5: ""
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie kann ich ein Videogespräch auf Facebook starten?",
@@ -251,7 +260,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Tippen Sie oben rechts auf das Kamera-Symbol.",
             solution3: "3. Warten Sie, bis Ihr Kontakt den Anruf annimmt.",
             solution4: "",
-            solution5: ""
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie verschicke ich eine Nachricht auf Telegram?",
@@ -259,7 +269,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "2. Geben Sie Ihre Nachricht ein und drücken Sie auf das Senden-Symbol.",
             solution3: "",
             solution4: "",
-            solution5: ""
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "Wie kann ich Kanälen auf Telegam beitreten?",
@@ -268,14 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
             solution3: "",
             solution4: "",
             solution5: "",
-        },
-        {
-            problem: "Wie funktioniert Netflix auf dem Handy?",
-            solution: "1. Laden Sie sich die App 'Netflix' im Store herunter.",
-            solution2: "2. Öffnen Sie 'Netflix'.",
-            solution3: "",
-            solution4: "",
-            solution5: ""
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "",
@@ -283,7 +287,8 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "",
             solution3: "",
             solution4: "",
-            solution5: ""
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
         },
         {
             problem: "",
@@ -291,7 +296,17 @@ document.addEventListener("DOMContentLoaded", function() {
             solution2: "",
             solution3: "",
             solution4: "",
-            solution5: ""
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
+        },
+        {
+            problem: "",
+            solution: "",
+            solution2: "",
+            solution3: "",
+            solution4: "",
+            solution5: "",
+            solution6: "PDF_ANLEITUNG"
         },
 
     ];
@@ -315,7 +330,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     found = true;
                     const resultHTML = `
                         <h3>${entry.problem}</h3>
-                        <p>${entry.solution}<br>${entry.solution2}<br>${entry.solution3}<br>${entry.solution4}<br>${entry.solution5}</p>
+                        <p>${entry.solution}<br>${entry.solution2}<br>${entry.solution3}<br>${entry.solution4}<br>${entry.solution5}<br>${entry.solution6}</p>
                     `;
                     resultsDiv.innerHTML += resultHTML;
                 }

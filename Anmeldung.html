@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anmeldung</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Internet leicht gemacht</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="grundlagen.html">Grundlagen</a></li>
-                <li><a href="sicherheit.html">Sicherheit</a></li>
-                <li><a href="kommunikation.html">Kommunikation</a></li>
-                <li><a href="services.html">Nützliche Dienste</a></li>
-                <li><a href="glossar.html">Glossar</a></li>
-                <li><a href="suche.html">Suche</a></li>
-                <li><a href="Anmeldung.html" class="active">Anmeldung</a></li>
-            </ul>
-        </nav>
+      <h1>InfoAid</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="grundlagen.html">Grundlagen</a></li>
+          <li><a href="sicherheit.html">Sicherheit</a></li>
+          <li><a href="kommunikation.html">Kommunikation</a></li>
+          <li><a href="services.html">Nützliche Dienste</a></li>
+          <li><a href="glossar.html">Glossar</a></li>
+          <li><a href="suche.html">Suche</a></li>
+          <li><a href="Anmeldung.html" class="active">Anmeldung</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- Register -->
-        <section>
-            <form action="register.php" method="POST">
-                <h2>Registrierung</h2>
-                <label for="username">Benutzername:</label>
-                <input type="text" id="username" name="username" required>
-            
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" required>
-            
-                <label for="password">Passwort:</label>
-                <input type="password" id="password" name="password" required>
-            
-                <label for="confirmPassword">Passwort bestätigen:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-            
-                <button type="submit">Registrieren</button>
-            </form>            
-        </section>
+      <!-- Register -->
+      <section>
+        <form action="register.php" method="POST">
+          <h2>Registrieren</h2>
+          <form action="register.php" method="POST">
+            <input type="email" name="email" placeholder="E-Mail" required />
+            <input type="password" name="password" placeholder="Passwort" required/>
+            <button type="submit">Registrieren</button>
+          </form>
+      </section>
 
-        <!-- Login -->
-        <section>
-            <form id="loginForm" action="login.php" method="POST">
-                <h2>Anmeldung</h2>
-                <label for="email">E-Mail:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="password">Passwort:</label>
-                <input type="password" id="password" name="password" required>
-                
-                <button type="submit">Anmelden</button>
-            </form>
-        </section>
+      <!-- Login -->
+      <section>
+        <form id="loginForm" action="login.php" method="POST">
+          <h2>Anmeldung</h2>
+          <input type="email" id="email" name="email" placeholder="E-Mail" required />
+          <input type="password" id="password" name="password" placeholder="Passwort" required />
+          <button type="submit">Anmelden</button>
+        </form>
+      </section>
 
-        <!-- Verwaltung -->
-        <section>
-            <h2>Benutzerprofil</h2>
-            <p>Benutzername: <span id="username"></span></p>
-            <p>E-Mail: <span id="email"></span></p>
-        </section>
+      <!-- Verwaltung -->
+      <section>
+        <h2>Benutzerprofil</h2>
+        <p>E-Mail: <span id="email"></span></p>
+      </section>
 
-        <!-- Password ändern -->
-        <section>
-            <form id="changePasswordForm" action="change_password.php" method="POST">
-                <h2>Passwort ändern</h2>
-                <label for="currentPassword">Aktuelles Passwort:</label>
-                <input type="password" id="currentPassword" name="currentPassword" required>
-                
-                <label for="newPassword">Neues Passwort:</label>
-                <input type="password" id="newPassword" name="newPassword" required>
-                
-                <label for="confirmPassword">Neues Passwort bestätigen:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
-                
-                <button type="submit">Passwort ändern</button>
-            </form>
-        </section>
+      <!-- Password ändern -->
+      <!--<section>
+        <form
+          id="changePasswordForm"
+          action="change_password.php"
+          method="POST"
+        >
+          <h2>Passwort ändern</h2>
+          <label for="currentPassword">Aktuelles Passwort:</label>
+          <input
+            type="password"
+            id="currentPassword"
+            name="currentPassword"
+            required
+          />
+
+          <label for="newPassword">Neues Passwort:</label>
+          <input type="password" id="newPassword" name="newPassword" required />
+
+          <label for="confirmPassword">Neues Passwort bestätigen:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
+
+          <button type="submit">Passwort ändern</button>
+        </form>
+      </section>
+
+      <!-- Abtrennung -->
+
     </main>
 
     <footer>
-        <p>© 2024 Internet leicht gemacht | <a href="mailto:info@glossar.de">Kontakt</a></p>
+      <p>
+        © 2024 InfoAid |
+        <a href="mailto:info@glossar.de">Kontakt</a>
+      </p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

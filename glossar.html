@@ -1,54 +1,105 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glossar</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Internet leicht gemacht</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li>
-                <li><a href="grundlagen.html">Grundlagen</a></li>
-                <li><a href="sicherheit.html">Sicherheit</a></li>
-                <li><a href="kommunikation.html">Kommunikation</a></li>
-                <li><a href="services.html">Nützliche Dienste</a></li>
-                <li><a href="glossar.html" class="active">Glossar</a></li>
-                <li><a href="suche.html">Suche</a></li>
-                <li><a href="Anmeldung.html">Anmeldung</a></li>
-            </ul>
-        </nav>
+      <h1>InfoAid</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="grundlagen.html">Grundlagen</a></li>
+          <li><a href="sicherheit.html">Sicherheit</a></li>
+          <li><a href="kommunikation.html">Kommunikation</a></li>
+          <li><a href="services.html">Nützliche Dienste</a></li>
+          <li><a href="glossar.html" class="active">Glossar</a></li>
+          <li><a href="suche.html">Suche</a></li>
+          <li><a href="Anmeldung.html">Anmeldung</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- Suchfeld -->
-        <section>
-            <h2>Suchen Sie nach einem Begriff</h2>
-            <input type="text" id="searchInput" placeholder="Begriff eingeben..." onkeyup="filterGlossary()">
-        </section>
+      <!-- Suchfeld -->
+      <section>
+        <h2>Suchen Sie nach einem Begriff</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Begriff eingeben..."
+          onkeyup="filterGlossary()"
+        />
+      </section>
 
-        <!-- Alphabetische Liste -->
-        <section>
-            <h2>Alle Begriffe</h2>
-            <ul id="glossaryList">
-                <li data-term="Browser"><strong>Browser:</strong> Ein Programm, mit denen Sie im Internet surfen können, z. B. Chrome, Firefox.</li>
-                <li data-term="Cookie"><strong>Cookie:</strong> Kleine Datei, die Informationen über Ihren Besuch auf einer Website speichert.</li>
-                <li data-term="Download"><strong>Download:</strong> Herunterladen von Dateien aus dem Internet auf Ihren Computer.</li>
-                <li data-term="Firewall"><strong>Firewall:</strong> Ein Schutzmechanismus, der unerwünschte Zugriffe auf Ihren Computer blockiert.</li>
-                <li data-term="Phishing"><strong>Phishing:</strong> Betrugsversuch, bei dem jemand Ihre persönlichen Daten stehlen will.</li>
-                <li data-term="WLAN"><strong>WLAN:</strong> Kabellose Verbindung zum Internet in Ihren Zuhause.</li>
-                <li data-term="Cloud"><strong>Cloud:</strong> Ein Digitaler Speicherort, welcher nicht den Speicher Ihres Geräts belastet.</li>
-            </ul>
-        </section>
+      <!-- Suchfeld <section>
+        <form method="get" action="glossar.php">
+          <label for="search">Suchbegriff:</label>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Begriff eingeben"
+          />
+          <button type="submit">Suchen</button>
+        </form>
+        <div id="results">
+          <!-- Suchergebnisse werden hier angezeigt
+        </div>
+      </section>-->
+
+      <!-- Alphabetische Liste -->
+      <section>
+        <h2>Alle Begriffe</h2>
+        <ul id="glossaryList">
+          <li data-term="Administration">
+            <strong>Administration:</strong> Die Verwaltung und Organisation von
+            Aufgaben oder Systemen, um alles reibungslos laufen zu lassen.
+          </li>
+          <li data-term="Android">
+            <strong>Android:</strong> Das Betriebssystem, das viele Smartphones
+            und Tablets steuert.
+          </li>
+          <li data-term="Browser">
+            <strong>Browser:</strong> Ein Programm, mit denen Sie im
+            Internetsurfen können, z. B. Chrome, Firefox.
+          </li>
+          <li data-term="Cookie">
+            <strong>Cookie:</strong> Kleine Datei, die Informationen über
+            IhrenBesuch auf einer Website speichert.
+          </li>
+          <li data-term="Download">
+            <strong>Download:</strong> Herunterladen von Dateien aus demInternet
+            auf Ihren Computer.
+          </li>
+          <li data-term="Firewall">
+            <strong>Firewall:</strong> Ein Schutzmechanismus, der
+            unerwünschteZugriffe auf Ihren Computer blockiert.
+          </li>
+          <li data-term="Phishing">
+            <strong>Phishing:</strong> Betrugsversuch, bei dem jemand
+            Ihrepersönlichen Daten stehlen will.
+          </li>
+          <li data-term="Windows-Sicherheit">
+            <strong>Windows-Sicherheit:</strong> Schutzfunktionen von Windows,
+            <!-- die deinen Computer vor Viren, Hackern und anderen Gefahren -->
+            bewahren.
+          </li>
+          <li data-term="WLAN">
+            <strong>WLAN:</strong> Kabellose Verbindung zum Internet in
+            IhrenZuhause.
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>
-        <p>© 2024 Glossar | <a href="mailto:info@glossar.de">Kontakt</a></p>
+      <p>© 2024 InfoAid | <a href="mailto:info@glossar.de">Kontakt</a></p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
